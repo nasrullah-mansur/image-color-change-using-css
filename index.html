@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Color Change Using CSS Filter</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+
+
+      <div class="container">
+          <div class="title">
+              <h1>Image Color Change Using CSS Filter</h1>
+          </div>
+          <div class="row">
+              <div class="col-6">
+                  <div class="form">
+                        <label for="hex">Target Color</label>
+                        <input class="target" type="text" id="hex" value="#434343">
+                        <button class="execute">Compute Filters</button>
+                  </div>
+              </div>
+              <div class="col-6">
+                  <div class="output">
+                    <p>Real pixel, color applied through CSS <code>background-color</code>:</p>
+                    <div class="bg-color realPixel pixel"></div>
+
+                    <p>Filtered pixel, color applied through CSS <code>filter</code>:</p>
+                    <img src="images/image.png" class="filterPixel" alt="image">
+                  </div>
+              </div>
+          </div>
+          <div class="output-code">
+            <p class="filterDetail"></p>
+            <p class="lossDetail"></p>
+          </div>
+      </div>
+
+
+
+      <script src="js/jquery.2.2.4.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
